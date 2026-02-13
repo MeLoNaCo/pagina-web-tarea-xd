@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YACO - Sabor que llega</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+
+    
+  <header class="navbar">
+
+    <div class="Izquierda">
+      <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+      <a href="index.html" class="logo">
+      <img src="yacologo.png" alt="YACO - sabor que llega" />
+    </a>
+    </div>
+
+
+    <nav class="nav-links">
+      
+      <input type="text" id="busqueda" name="busqueda" placeholder="Busque su plato favorito" required>
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </nav>
+
+    <a href="login.html" class="login">Iniciar sesión</a>
+    <a href="pedido.html"class="Iconos"> <i class="fa-solid fa-cart-shopping"></i></a>
+  </header>
+
+  
+
+<main class="main">
+
+  <aside class="sidebar" id="miSidebar">
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#">Promociones</a></li>
+                <li><a href="#">Restaurantes</a></li>
+                <li><a href="#">Supermercados</a></li>
+                <li><a href="#">Registra tu restaurante</a></li>
+                <li><a href="#">Registra tu tienda</a></li>
+                <li><a href="#">Trabaja para nosotros</a></li>
+                <li><a href="#">Pauta en YACO</a></li>
+               
+                
+            </ul>
+        </nav>
+
+    </aside>
+
+<div class="pedido">
+  <h1>Mi pedido</h1>
+
+  <table class="pedido-tabla">
+    <tbody>
+
+      <tr class="producto-tabla">
+        <td class="check-col">
+          <input type="checkbox" id="p1">
+        </td>
+        <td>
+          <label for="p1">
+            <h3>Pizza Napolitana</h3>
+            <p>Cantidad: 1</p>
+            <p>Precio: S/ 25.00</p>
+          </label>
+        </td>
+      </tr>
+
+      <tr class="producto-tabla">
+        <td class="check-col">
+          <input type="checkbox" id="p2">
+        </td>
+        <td>
+          <label for="p2">
+            <h3>Hamburguesa Clásica</h3>
+            <p>Cantidad: 2</p>
+            <p>Precio: S/ 30.00</p>
+          </label>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <button class="confirmar" onclick="confirmarPedido()">Confirmar Pedido</button>
+  <a href="pedidos.html" class="ver-historial">Ver historial de pedidos</a>
+</div>
+  
+</main>
+
+
+
+
+
+
+    <footer class="footer">
+
+      <div class="Redes">
+
+        <ul>
+          <a href="https://www.instagram.com/" target="_blank"><img src="https://logos-world.net/wp-content/uploads/2020/06/Instagram-Logo-700x394.png" alt="Instagram"></a>
+          <a href="https://www.tiktok.com/" target="_blank"><img src="https://logos-world.net/wp-content/uploads/2020/04/TikTok-Logo-700x394.png" alt="Tiktok"></a>
+          <a href="https://x.com/home" target="_blank"><img src="https://logos-world.net/wp-content/uploads/2023/07/X-Corp.-Logo-500x281.png" alt="X"></a>
+        </ul>
+
+      </div>
+        
+      <div class="instalar">
+
+        <div class="footer-logos">
+        <a href="" target="Appstore.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/135px-Download_on_the_App_Store_Badge.svg.png?20170219160111" alt="appstore"></a>
+        </div>
+
+        <div class="footer-logos">
+        <a href="" target="Playstore.com"><img src="https://logos-world.net/wp-content/uploads/2020/11/Google-Play-Logo-2015-2016.png" alt="playstore"></a>
+        </div>
+
+      </div>
+
+      <div class="libroReclamos">
+        <div class="footer-logos">
+        <a href="#"><img src="https://www.reclamaya.pe/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flibro-reclamaciones.6e6f035c.png&w=128&q=75" alt="libroDeReclamos"></a>
+        </div>
+      </div>
+
+      <div class="textoAbajo">
+        <p style="text-align: center;">&copy; 2025 Yaco Inc. all rights reserved.</p>
+      </div>
+
+    </footer>
+  </div>
+
+  <script src="javaScript.js"></script>
+</body>
+</html>

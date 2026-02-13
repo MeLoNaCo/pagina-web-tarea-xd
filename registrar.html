@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YACO - Sabor que llega</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+
+    
+  <header class="navbar">
+
+    <div class="Izquierda">
+      
+      <a href="index.html" class="logo">
+      <img src="yacologo.png" alt="YACO - sabor que llega" />
+    </a>
+    </div>
+
+
+    <nav class="nav-links">
+      
+      <input type="text" id="busqueda" name="busqueda" placeholder="Busque su plato favorito" required>
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </nav>
+
+    <a href="login.html" class="login">Iniciar sesión</a>
+    <a href="pedido.html"class="Iconos"> <i class="fa-solid fa-cart-shopping"></i></a>
+  </header>
+
+  
+
+    <main class="main">
+
+      
+
+        <div class="IniciarSesion">
+            <h1>Registrar</h1>
+            <form onsubmit="validarRegistro(event)">
+            <label for="correo">Correo</label>
+            <input type="text" id="correo" name="correo" placeholder="Ingrese su correo"  required /> <br/><br/>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre"  required /> <br/><br/>
+            <label for="contraseña">Contraseña</label>
+            <input type="text" id="contraseña" name="contraseña" placeholder="Ingrese su contraseña" required /> <br/><br/>
+            <label for="contraseña2">Confirme su contraseña</label>
+            <input type="text" id="conContraseña" name="conContraseña" placeholder="Confirme su contraseña" required /> <br/><br/>
+            <button type="submit">Ingresar</button>
+            </form>
+        </div>
+
+        <div class="item">
+            <h2>Registrate con nosotros. Desde tu antojo hasta tu puerta.</h2>
+        </div>
+
+        <div class="item">
+            
+         
+            <img src="https://cdn.pixabay.com/photo/2022/04/20/21/57/shipping-7146244_1280.png" alt="camion">
+        </div>
+    </main>
+
+
+
+
+
+
+    <footer class="footer">
+
+      <div class="Redes">
+
+        <ul>
+          <a href="https://www.instagram.com/" target="_blank"><img src="https://logos-world.net/wp-content/uploads/2020/06/Instagram-Logo-700x394.png" alt="Instagram"></a>
+          <a href="https://www.tiktok.com/" target="_blank"><img src="https://logos-world.net/wp-content/uploads/2020/04/TikTok-Logo-700x394.png" alt="Tiktok"></a>
+          <a href="https://x.com/home" target="_blank"><img src="https://logos-world.net/wp-content/uploads/2023/07/X-Corp.-Logo-500x281.png" alt="X"></a>
+        </ul>
+
+      </div>
+        
+      <div class="instalar">
+
+        <div class="footer-logos">
+        <a href="" target="Appstore.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/135px-Download_on_the_App_Store_Badge.svg.png?20170219160111" alt="appstore"></a>
+        </div>
+
+        <div class="footer-logos">
+        <a href="" target="Playstore.com"><img src="https://logos-world.net/wp-content/uploads/2020/11/Google-Play-Logo-2015-2016.png" alt="playstore"></a>
+        </div>
+
+      </div>
+
+      <div class="libroReclamos">
+        <div class="footer-logos">
+        <a href="#"><img src="https://www.reclamaya.pe/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flibro-reclamaciones.6e6f035c.png&w=128&q=75" alt="libroDeReclamos"></a>
+        </div>
+      </div>
+
+      <div class="textoAbajo">
+        <p style="text-align: center;">&copy; 2025 Yaco Inc. all rights reserved.</p>
+      </div>
+
+    </footer>
+  </div>
+
+  <script src="javaScript.js"></script>
+</body>
+</html>

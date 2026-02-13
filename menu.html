@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YACO - Sabor que llega</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <header class="navbar">
+
+    <div class="Izquierda">
+      <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+      <a href="index.html" class="logo">
+      <img src="yacologo.png" alt="YACO - sabor que llega" />
+    </a>
+    </div>
+
+
+    <nav class="nav-links">
+      
+      <input type="text" id="busqueda" name="busqueda" placeholder="Busque su plato favorito" required>
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </nav>
+
+    <a href="login.html" class="login">Iniciar sesión</a>
+    <a href="pedido.html"class="Iconos"> <i class="fa-solid fa-cart-shopping"></i></a>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar" id="miSidebar">
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#">Promociones</a></li>
+                <li><a href="#">Restaurantes</a></li>
+                <li><a href="#">Supermercados</a></li>
+                <li><a href="#">Registra tu restaurante</a></li>
+                <li><a href="#">Registra tu tienda</a></li>
+                <li><a href="#">Trabaja para nosotros</a></li>
+                <li><a href="#">Pauta en YACO</a></li>
+               
+                
+            </ul>
+        </nav>
+
+    </aside>
+
+  <main class="main">
+
+        <div id="miModal" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal()">&times;</span>
+            <h2>Día de Pizzas</h2>
+            <p>¡Descuentos especiales hoy hasta del 80%!</p>
+            <p>Llena nuestra encuesta para tener pan al ajo gratis</p>
+            <button>Encuesta</button>
+        </div>
+    </div>
+
+        <div class="item" onclick="abrirModal()">
+            <a href="#"><img src="https://images.rappi.pe/rests_taxonomy/1cbc96c9-2098-40c9-b131-3a8b89f85394.png?e=webp&q=10&d=10x10" alt="sushi"></a>
+        </div>
+        <div class="item" onclick="abrirModal()">
+            <a href="#"><img src="https://images.rappi.pe/rests_taxonomy/4bb80972-985a-40d0-bc0f-bf770059d6e1.png?e=webp&q=10&d=10x10" alt="pizzas"></a>
+        </div>
+        <div class="item" onclick="abrirModal()">
+            <a href="#"><img src="https://images.rappi.pe/rests_taxonomy/eabe9438-9108-449b-a228-047c51d0cd4c.png?e=webp&q=10&d=10x10" alt="xd"></a>
+        </div>
+        <div class="item" onclick="abrirModal()">
+            <a href="#"><img src="https://images.rappi.pe/rests_taxonomy/9c3d044c-2dac-4624-b76b-71050376a936.png?e=webp&q=10&d=10x10" alt="postres"></a>
+        </div>
+        <div class="item" onclick="abrirModal()">
+            <a href="#"><img src="https://images.rappi.pe/rests_taxonomy/1ffaaf64-491e-420a-a7b8-aebb04b9d006.png?e=webp&q=10&d=10x10" alt="desayunos"></a>
+        </div>
+        <div class="item" onclick="abrirModal()">
+            <a href="#"><img src="https://images.rappi.pe/rests_taxonomy/39cc01cd-1940-4f68-bff3-93a71f63af22.png?e=webp&q=10&d=10x10" alt="poke"></a>
+        </div>
+        <div class="item" onclick="abrirModal()">
+            <a href="#"><img src="https://images.rappi.pe/rests_taxonomy/7274c050-3027-4a86-93f5-e16697f99871.png?e=webp&q=10&d=10x10" alt="hamburguesa"></a>
+        </div>
+        <div class="item" onclick="abrirModal()">
+            <a href="#"><img src="https://images.rappi.pe/rests_taxonomy/d4e2d4f5-7694-42cb-b9c1-d532069c55dc.png?e=webp&q=10&d=10x10" alt="chifa"></a>
+        </div>
+        <div class="item" onclick="abrirModal()">
+            <a href="#"><img src="https://images.rappi.pe/rests_taxonomy/2f01d6ec-fcaf-4411-bd43-4c0d0aa56589.png?e=webp&q=10&d=10x10" alt="polleria"></a>
+        </div>
+        <div class="item" onclick="abrirModal()">
+            <a href="#"><img src="https://images.rappi.pe/rests_taxonomy/1a8be2fd-b214-4e24-b3e7-a0e4aedb63ac.png?e=webp&q=10&d=10x10" alt="pescados"></a>
+        </div>
+        <div class="item" onclick="abrirModal()">
+            <a href="#"><img src="https://images.rappi.pe/rests_taxonomy/12f3e65a-d2f7-4cc5-b534-616f1c6c616a.png?e=webp&q=10&d=10x10" alt="saludable"></a>
+        </div>
+        <div class="item" onclick="abrirModal()">
+            <a href="#"><img src="https://images.rappi.pe/rests_taxonomy/0e45186c-4b22-4892-8d9d-b8272263705d.png?e=webp&q=10&d=10x10" alt="alitas"></a>
+        </div>
+  </main>
+
+<section class="section1">
+
+    
+
+  <div class="menu-grid">
+
+    <div class="plato">
+      <img src="https://images.rappi.pe/restaurants_background/portada_bembos_2-1749250907743.jpg?e=webp&q=40&d=300x300" alt="Hamburguesa">
+      <h3>Hamburguesa Clásica</h3>
+      <p>Pan artesanal, carne 100% res, queso cheddar.</p>
+      <span class="precio">S/ 15.00</span>
+      <a href="pedido.html"><button>comprar</button></a>
+    </div>
+
+    <div class="plato">
+      <img src="https://images.rappi.pe/restaurants_background/portadaedo-1745019013975.jpg?e=webp&q=40&d=300x300" alt="sushi">
+      <h3>Sushi Mix Especial</h3>
+      <p>Selección de rolls frescos con salmón, atún y palta, acompañados de salsa de soya.</p>
+      <span class="precio">S/ 32.00</span>
+      <a href="pedido.html"><button>comprar</button></a>
+    </div>
+
+    <div class="plato">
+      <img src="https://images.rappi.pe/restaurants_background/0336a96d-f83d-48f2-8d40-9a6957d27d77-1710804714104.png?e=webp&q=40&d=300x300" alt="Ensalada">
+      <h3>Pizza Napolitana</h3>
+      <p>Masa artesanal con salsa de tomate natural, mozzarella y hojas de albahaca.</p>
+      <span class="precio">S/ 28.00</span>
+      <a href="pedido.html"><button>comprar</button></a>
+    </div>
+
+    <div class="plato">
+      <img src="https://images.rappi.pe/restaurants_background/home2-1582920631896.jpg?e=webp&q=40&d=300x300" alt="pollobrasa">
+      <h3>Pollo a la Brasa Clásico</h3>
+      <p>Jugoso pollo marinado con especias, acompañado de papas fritas y ensalada.</p>
+      <span class="precio">S/ 25.00</span>
+      <a href="pedido.html"><button>comprar</button></a>
+    </div>
+
+    <div class="plato">
+      <img src="https://images.rappi.pe/restaurants_background/pedonbajadonsangucheria-1666193956523.jpg?e=webp&q=40&d=300x300" alt="hamburguesabbq">
+      <h3>Hamburguesa BBQ</h3>
+      <p>Doble carne de res, queso cheddar, cebolla caramelizada y salsa BBQ artesanal.</p>
+      <span class="precio">S/ 22.00</span>
+      <a href="pedido.html"><button>comprar</button></a>
+    </div>
+    <div class="plato">
+      <img src="https://images.rappi.pe/restaurants_background/pepokeboss-1666112676395.jpg?e=webp&q=40&d=300x300" alt="pokebowl">
+      <h3>Poke Bowl Hawaiano</h3>
+      <p>Base de arroz con cubos de salmón, mango, edamame, palta y sésamo.</p>
+      <span class="precio">S/ 27.00</span>
+      <a href="pedido.html"><button>comprar</button></a>
+    </div>
+    <div class="plato">
+      <img src="https://images.rappi.pe/products/6a849814-53f3-45f9-8794-117fb51413fc.jpeg?e=webp&q=80&d=130x130" alt="ceviche">
+      <h3>Ceviche Clásico Peruano</h3>
+      <p>Pescado fresco marinado en limón con cebolla morada y camote.</p>
+      <span class="precio">S/ 29.00</span>
+      <a href="pedido.html"><button>comprar</button></a>
+    </div>
+    <div class="plato">
+      <img src="https://images.rappi.pe/products/b94867c8-bba8-4832-8ced-22e352cd5755.png?e=webp&q=80&d=130x130" alt="desayuno">
+      <h3>Desayuno Yaco</h3>
+      <p>Pan artesanal con huevos revueltos, jugo natural y café americano.</p>
+      <span class="precio">S/ 18.00</span>
+      <a href="pedido.html"><button>comprar</button></a>
+    </div>
+    <div class="plato">
+      <img src="https://images.rappi.pe/products/6129a030-19fb-4e63-955f-c92f974f42bb.png?e=webp&q=80&d=130x130" alt="ensalada">
+      <h3>Ensalada Saludable Premium</h3>
+      <p>Mezcla de lechugas, quinoa, palta, tomate cherry y vinagreta cítrica.</p>
+      <span class="precio">S/ 21.00</span>
+      <a href="pedido.html"><button>comprar</button></a>
+    </div>
+    <div class="plato">
+      <img src="https://images.rappi.pe/restaurants_background/4a29e17d-12e7-4b50-a778-3d689ae58d2a-1683906957324.png?e=webp&q=40&d=300x300" alt="alitas">
+      <h3>Alitas Picantes</h3>
+      <p>Alitas crocantes bañadas en salsa búfalo, acompañadas con bastones de apio.</p>
+      <span class="precio">S/ 19.00</span>
+      <a href="pedido.html"><button>comprar</button></a>
+    </div>
+    <div class="plato">
+      <img src="https://images.rappi.pe/restaurants_background/c320eb81-de43-43f8-bb1e-bf395f4828e4-1753073281796.jpeg?e=webp&q=40&d=300x300" alt="tallarines">
+      <h3>Tallarines al Alfredo</h3>
+      <p>Pasta al dente con salsa cremosa de queso parmesano y pollo grillado.</p>
+      <span class="precio">S/ 26.00</span>
+      <a href="pedido.html"><button>comprar</button></a>
+    </div>
+    <div class="plato">
+      <img src="https://images.rappi.pe/products/bb5098af-1b90-4816-8950-2be6e6997820-1605717683328.jpeg?e=webp&q=80&d=130x130" alt="tresleches">
+      <h3>Postre Tres Leches</h3>
+      <p>Bizcocho húmedo con mezcla de tres leches y cobertura de merengue.</p>
+      <span class="precio">S/ 12.00</span>
+      <a href="pedido.html"><button>comprar</button></a>
+    </div>
+     <div class="plato">
+      <img src="https://images.rappi.pe/products/6a31d64e-d12f-4323-bdb4-2241aa8de6ea.png?e=webp&q=80&d=130x130" alt="smoothie">
+      <h3>Smoothie Tropical</h3>
+      <p>Bebida natural de mango, piña y plátano, sin azúcar añadida.</p>
+      <span class="precio">S/ 10.00</span>
+      <a href="pedido.html"><button>comprar</button></a>
+    </div>
+    <div class="plato">
+      <img src="https://images.rappi.pe/products/24d5cf97-9a7f-431a-93e7-451d1d83f668-1753577136859.png?e=webp&q=80&d=130x130" alt="tacomexicano">
+      <h3>Taco Mexicano de Carne</h3>
+      <p>Tortilla suave rellena con carne sazonada, guacamole, cebolla y cilantro fresco.</p>
+      <span class="precio">S/ 20.00</span>
+      <a href="pedido.html"><button>comprar</button></a>
+    </div>
+    <div class="plato">
+      <img src="https://images.rappi.pe/products/ea36da4e-1572-41bf-8704-a998fcafeb2f.png?e=webp&q=80&d=130x130" alt="lomosaltao">
+      <h3>Lomo Saltado</h3>
+      <p>Clásico peruano con tiras de carne, cebolla, tomate y papas fritas, servido con arroz.</p>
+      <span class="precio">S/ 31.00</span>
+      <a href="pedido.html"><button>comprar</button></a>
+    </div>
+    <div class="plato">
+      <img src="https://images.rappi.pe/products/tmpImg33121e66-c4d2-4440-8a8d-3a17ee2924d5.png?e=webp&q=80&d=130x130" alt="wrappollo">
+      <h3>Wrap de Pollo César</h3>
+      <p>Envoltura de tortilla con pollo grillado, lechuga, parmesano y aderezo césar.</p>
+      <span class="precio">S/ 19.00</span>
+      <a href="pedido.html"><button>comprar</button></a>
+    </div>
+    <div class="plato">
+      <img src="https://images.rappi.pe/products/dc13664b-29fc-4f8f-a051-57dd31170240.png?e=webp&q=80&d=130x130" alt="lasagna">
+      <h3>Lasagna Boloñesa</h3>
+      <p>Capas de pasta con carne molida, salsa de tomate y queso gratinado al horno.</p>
+      <span class="precio">S/ 27.00</span>
+      <a href="pedido.html"><button>comprar</button></a>
+    </div>
+    <div class="plato">
+      <img src="https://images.rappi.pe/products/30361e44-b158-4a14-866a-2d3b3f5f60d9.png?e=webp&q=80&d=130x130" alt="arepas">
+      <h3>Arepas Venezolanas</h3>
+      <p>Panecillos de maíz rellenos con queso, pollo o carne mechada.</p>
+      <span class="precio">S/ 17.00</span>
+      <a href="pedido.html"><button>comprar</button></a>
+    </div>
+
+  </div>
+
+
+</section>
+
+    <section class="section2">
+  <div class="TextoArriba">
+    <h5>Nuestras mejores empresas</h5>
+  </div>
+
+  <div class="Debajo">
+    <div class="item2">
+      <img src="https://logos-world.net/wp-content/uploads/2020/04/KFC-Logo-700x394.png" alt="KFC">
+    </div>
+    <div class="item2">
+      <img src="https://logos-world.net/wp-content/uploads/2020/05/Burger-King-Logo-700x394.png" alt="BurgerKing">
+    </div>
+    <div class="item2">
+      <img src="https://images.rappi.pe/restaurants_logo/737-1545950638-1596840219063.png?e=webp&d=100x100&q=80" alt="Mcdonalds">
+    </div>
+    <div class="item2">
+      <img src="https://images.rappi.pe/restaurants_logo/1109-1551285389-1563398659153.png?e=webp&d=100x100&q=80" alt="Bembos">
+    </div>
+    <div class="item2">
+      <img src="https://logos-world.net/wp-content/uploads/2021/10/Pizza-Hut-Logo-700x394.png" alt="pizzahut">
+    </div>
+    <div class="item2">
+      <img src="https://logos-world.net/wp-content/uploads/2021/10/Popeyes-Logo-700x394.png" alt="popeyes">
+    </div>
+    <div class="item2">
+      <img src="https://seeklogo.com/images/C/china-wok-logo-AAB5742CDF-seeklogo.com.png" alt="chinawok">
+    </div>
+    <div class="item2">
+      <img src="https://rokys.com/img/rokys/logo.svg" alt="rokys">
+    </div>
+    <div class="item2">
+      <img src="https://images.rappi.pe/restaurants_logo/descarga-1670012321383.png?e=webp&d=100x100&q=80" alt="subway">
+    </div>
+    <div class="item2">
+      <img src="https://images.rappi.pe/restaurants_logo/descarga-1657149722822.png?e=webp&d=100x100&q=80" alt="papajhons">
+    </div>
+  </div>
+</section>
+    
+
+
+    <footer class="footer">
+
+      <div class="Redes">
+
+        <ul>
+          <a href="https://www.instagram.com/" target="_blank"><img src="https://logos-world.net/wp-content/uploads/2020/06/Instagram-Logo-700x394.png" alt="Instagram"></a>
+          <a href="https://www.tiktok.com/" target="_blank"><img src="https://logos-world.net/wp-content/uploads/2020/04/TikTok-Logo-700x394.png" alt="Tiktok"></a>
+          <a href="https://x.com/home" target="_blank"><img src="https://logos-world.net/wp-content/uploads/2023/07/X-Corp.-Logo-500x281.png" alt="X"></a>
+        </ul>
+
+      </div>
+        
+      <div class="instalar">
+
+        <div class="footer-logos">
+        <a href="" target="Appstore.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/135px-Download_on_the_App_Store_Badge.svg.png?20170219160111" alt="appstore"></a>
+        </div>
+
+        <div class="footer-logos">
+        <a href="" target="Playstore.com"><img src="https://logos-world.net/wp-content/uploads/2020/11/Google-Play-Logo-2015-2016.png" alt="playstore"></a>
+        </div>
+
+      </div>
+
+      <div class="libroReclamos">
+        <div class="footer-logos">
+        <a href="#"><img src="https://www.reclamaya.pe/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flibro-reclamaciones.6e6f035c.png&w=128&q=75" alt="libroDeReclamos"></a>
+        </div>
+      </div>
+
+      <div class="textoAbajo">
+        <p style="text-align: center;">&copy; 2025 Yaco Inc. all rights reserved.</p>
+      </div>
+
+    </footer>
+  </div>
+
+  <script src="javaScript.js"></script>
+</body>
+</html>

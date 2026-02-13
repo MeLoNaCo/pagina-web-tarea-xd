@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YACO - Sabor que llega</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+
+    
+  <header class="navbar">
+
+    <div class="Izquierda">
+      <div class="menu-icon" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+      <a href="index.html" class="logo">
+      <img src="yacologo.png" alt="YACO - sabor que llega" />
+    </a>
+    </div>
+
+
+    <nav class="nav-links">
+      
+      <input type="text" id="busqueda" name="busqueda" placeholder="Busque su plato favorito" required>
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </nav>
+
+    <a href="login.html" class="login">Iniciar sesión</a>
+    <a href="pedido.html"class="Iconos"> <i class="fa-solid fa-cart-shopping"></i></a>
+  </header>
+
+  
+
+<main class="main">
+
+  <aside class="sidebar" id="miSidebar">
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#">Promociones</a></li>
+                <li><a href="#">Restaurantes</a></li>
+                <li><a href="#">Supermercados</a></li>
+                <li><a href="#">Registra tu restaurante</a></li>
+                <li><a href="#">Registra tu tienda</a></li>
+                <li><a href="#">Trabaja para nosotros</a></li>
+                <li><a href="#">Pauta en YACO</a></li>
+               
+                
+            </ul>
+        </nav>
+
+    </aside>
+
+<div class="historial">
+  <h1>Historial de pedidos</h1>
+
+  <div class="pedido-card">
+    <table border="1" cellpadding="8" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Pedido</th>
+          <th>Fecha</th>
+          <th>Productos</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr onclick="abrirModalPedido(
+          'Pedido #00123',
+          'Nombre: Juan Pérez\nHora: 10:45 AM\nBanco: BCP\nLocal: San Isidro'
+        )">
+          <td>#00123</td>
+          <td>10 de octubre de 2025</td>
+          <td>Pizza Napolitana, Ensalada César</td>
+          <td>S/ 42.00</td>
+        </tr>
+
+        <tr onclick="abrirModalPedido(
+          'Pedido #00122',
+          'Nombre: María Gómez\nHora: 8:30 PM\nBanco: Interbank\nLocal: Miraflores'
+        )">
+          <td>#00122</td>
+          <td>5 de octubre de 2025</td>
+          <td>Sushi Roll, Té Verde</td>
+          <td>S/ 38.00</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<div id="modalPedido" class="modal">
+  <div class="modal-contenido">
+    <span class="cerrar" onclick="cerrarModalPedido()">&times;</span>
+
+    <h2 id="titulo-modal"></h2>
+    <p id="texto-modal"></p>
+
+  </div>
+</div>
+
+</main>
+        
+    
+
+
+
+
+
+
+    <footer class="footer">
+
+      <div class="Redes">
+
+        <ul>
+          <a href="https://www.instagram.com/" target="_blank"><img src="https://logos-world.net/wp-content/uploads/2020/06/Instagram-Logo-700x394.png" alt="Instagram"></a>
+          <a href="https://www.tiktok.com/" target="_blank"><img src="https://logos-world.net/wp-content/uploads/2020/04/TikTok-Logo-700x394.png" alt="Tiktok"></a>
+          <a href="https://x.com/home" target="_blank"><img src="https://logos-world.net/wp-content/uploads/2023/07/X-Corp.-Logo-500x281.png" alt="X"></a>
+        </ul>
+
+      </div>
+        
+      <div class="instalar">
+
+        <div class="footer-logos">
+        <a href="" target="Appstore.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/135px-Download_on_the_App_Store_Badge.svg.png?20170219160111" alt="appstore"></a>
+        </div>
+
+        <div class="footer-logos">
+        <a href="" target="Playstore.com"><img src="https://logos-world.net/wp-content/uploads/2020/11/Google-Play-Logo-2015-2016.png" alt="playstore"></a>
+        </div>
+
+      </div>
+
+      <div class="libroReclamos">
+        <div class="footer-logos">
+        <a href="#"><img src="https://www.reclamaya.pe/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flibro-reclamaciones.6e6f035c.png&w=128&q=75" alt="libroDeReclamos"></a>
+        </div>
+      </div>
+
+      <div class="textoAbajo">
+        <p style="text-align: center;">&copy; 2025 Yaco Inc. all rights reserved.</p>
+      </div>
+
+    </footer>
+  </div>
+
+  <script src="javaScript.js"></script>
+</body>
+</html>
